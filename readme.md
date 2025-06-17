@@ -37,6 +37,7 @@ REDIS_PORT=6379
 ---
 
 ## 🗂 Folder Structure
+```
 .
 ├── public/ # Entry point (index.php)
 ├── src/
@@ -51,7 +52,7 @@ REDIS_PORT=6379
 ├── .env
 ├── .gitignore
 └── README.md
-
+```
 
 ---
 
@@ -72,7 +73,7 @@ JWT_EXPIRE=3600
 
 REDIS_HOST=redis
 REDIS_PORT=6379
-
+```
 ## 🚀 Run Project
 
 ```bash
@@ -81,3 +82,4 @@ docker-compose up --build
 
 # Access the app
 curl http://localhost:8081/api/ping
+```

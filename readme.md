@@ -1,0 +1,16 @@
+env data struct
+
+APP_ENV=
+APP_KEY=
+
+DB_HOST=db
+DB_PORT=3306
+DB_NAME=test
+DB_USER=root
+DB_PASS=
+
+JWT_SECRET=
+JWT_EXPIRE=3600 # 1 hour
+
+REDIS_HOST=redis
+REDIS_PORT=6379

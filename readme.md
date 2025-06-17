@@ -1,21 +1,3 @@
-env data struct
-
-APP_ENV=
-APP_KEY=
-
-DB_HOST=db
-DB_PORT=3306
-DB_NAME=test
-DB_USER=root
-DB_PASS=
-
-JWT_SECRET=
-JWT_EXPIRE=3600 # 1 hour
-
-REDIS_HOST=redis
-REDIS_PORT=6379
-
-
 # FlightPHP REST API Boilerplate
 
 > A lightweight and scalable RESTful API backend written in **pure PHP** using [FlightPHP](https://flightphp.com/), with JWT authentication, Redis caching, logging, Docker, and rate limiting.
@@ -78,7 +60,7 @@ REDIS_PORT=6379
 
 ```bash
 # Start Docker containers
-docker-compose up --build
+docker-compose up --build --scale app=3
 
 # Access the app
 curl http://localhost:8081/api/ping
